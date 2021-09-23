@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Single projects exist here</h1>
+<img src="{{ project.featured_image.url }}" alt="">
+
+<h1>{{ projects.title }}</h1>
+
+<hr>
+    {% for tag in projects.tags.all %}
+        {{tag}}
+    {% endfor %}
+<hr>
+<p>{{ projects.description }}</p>
+{% endblock content %}

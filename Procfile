@@ -1,0 +1,1 @@
+web: gunicorn devfind.wsgi --log-file-
